@@ -1,0 +1,31 @@
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+buildscript {
+     ext.kotlin_version = '2.1.0' 
+    repositories {
+        google()          // Убедитесь, что это есть
+        mavenCentral()    // Убедитесь, что это есть
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.0' // Убедитесь в актуальной версии
+        classpath 'com.google.gms:google-services:4.4.0' // Это ваш плагин Google Services
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()          // Убедитесь, что это есть
+        mavenCentral()    // Убедитесь, что это есть
+    }
+}
+ext.kotlin_version = '2.1.0'                      
