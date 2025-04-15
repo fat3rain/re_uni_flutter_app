@@ -1,16 +1,7 @@
 # re_uni
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+My flutter last project for "project learning" at uni.
+It's an app where you can try pass tests and read the lections from your admins.
+Not complecated, not bloc-stated (will add soon)
+## Future features:
+Graph screen (aka MindMap) = > User can create some graphs with edges and compare them to paragraphs from lectures to simplify their experience. 
